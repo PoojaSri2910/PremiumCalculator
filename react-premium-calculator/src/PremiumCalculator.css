@@ -1,0 +1,142 @@
+.monthly-premium-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  padding: 20px;
+}
+
+.monthly-premium-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+
+  h2 {
+    text-align: center;
+    color: #1565c5;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.monthly-premium-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.monthly-premium-group {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+
+  input,
+  select {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: 0.3s ease;
+
+    &:focus {
+      border-color: #42a5f5;
+      box-shadow: 0 0 0 3px rgba(66, 165, 245, 0.3);
+      outline: none;
+    }
+  }
+}
+
+.premium-box {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #f7f9fc;
+  text-align: center;
+  border: 1px solid #eee;
+
+  .premium-value {
+    color: #2e7d32;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .premium-placeholder {
+    color: #888;
+    font-size: 0.95rem;
+  }
+}
+.error {
+  color: #d32f2f;
+  font-size: 0.8rem;
+  margin-top: 4px;
+  display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .calculator-card {
+    padding: 1.5rem;
+    max-width: 90%;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .monthly-premium-group label {
+    font-size: 0.85rem;
+  }
+
+  .monthly-premium-group input,
+  .monthly-premium-group select {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  .premium-box .premium-value {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .monthly-premium-card {
+    padding: 1rem;
+    border-radius: 12px;
+
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .monthly-premium-grid {
+    gap: 0.8rem;
+  }
+
+  .monthly-premium-group input,
+  .monthly-premium-group select {
+    font-size: 0.85rem;
+    padding: 7px 9px;
+  }
+
+  .premium-box {
+    padding: 0.8rem;
+
+    .premium-value {
+      font-size: 1rem;
+    }
+
+    .premium-placeholder {
+      font-size: 0.85rem;
+    }
+  }
+}
